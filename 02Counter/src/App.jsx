@@ -4,7 +4,9 @@ import './App.css'
 function App() {
 
   let [counter, setcounter] = useState(0)
-
+    if(counter < 0){
+      setcounter(0)
+    }
   function addValue(){
     setcounter(counter++)
   } 
