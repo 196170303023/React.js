@@ -6,6 +6,8 @@ function App() {
   let [counter, setcounter] = useState(0)
     if(counter < 0){
       setcounter(0)
+    }else if(counter > 20){
+      setcounter(20)
     }
   function addValue(){
     setcounter(counter++)
